@@ -12,20 +12,6 @@ Once the model returns its text, the script strips out the prompt prefix and the
 
 You can also expand the wizard’s personality by tweaking the prompt, or maintain a conversation history in memory or on disk for more context.
 
-## Directory Structure
-
-```
-project_root/
-  godot_project/
-    WizardNode.gd
-    Read Input and Write.gd
-  read/
-    input.txt
-    output.txt
-  chat.py
-  README.md
-```
-
 ## Requirements
 
 - **Godot Engine 4.x**  
