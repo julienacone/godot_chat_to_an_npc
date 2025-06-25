@@ -21,6 +21,6 @@ func check_input_and_start_thread() -> void:
 
 func execute_python_script() -> void:
 	var path = "python"
-	var arguments = PackedStringArray(["run.py"])
+	var arguments = PackedStringArray(["chat.py"])
 	var output = []
 	OS.execute(path, arguments, output, true)

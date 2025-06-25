@@ -31,11 +31,11 @@ def main():
             current_input = file.read().strip()
         
         if current_input != prev_input:
-            prompt = f"Respond as a drunk wizard and avoid repeating yourself {current_input}"
+            prompt = f"Respond as a wizard and avoid repeating yourself {current_input}"
             response = pipe(prompt, max_length=75, do_sample=True, top_p=0.7, temperature=0.7, num_return_sequences=1, truncation=True)[0]["generated_text"]
             
             # Remove the unwanted string and current_input
-            unwanted_string = "Respond as a drunk wizard and avoid repeating yourself "
+            unwanted_string = "Respond as a wizard and avoid repeating yourself "
             wizard_reply = response.replace(unwanted_string, "").replace(current_input, "").strip()
 
             # Limit the response to 1 sentence
